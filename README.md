@@ -4,7 +4,7 @@
 Creating a simple 4D chess engine, which will find the best move possible, given a game state. Restricted to 4x4x4x4 board.
 
 # Expected Features : 
-End to end correctness of algorithm, with proofs 
+1. End to end correctness of algorithm, with proofs using [Lean](https://www.microsoft.com/en-us/research/project/lean/)
 
 # Roll Number,Name
 1012411172,Ananya Bhonsle
