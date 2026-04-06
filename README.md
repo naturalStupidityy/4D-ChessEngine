@@ -5,6 +5,10 @@ Creating a simple 4D chess engine, which will find the best move possible, given
 
 # Expected Features : 
 1. End to end correctness of algorithm, with proofs using [Lean](https://www.microsoft.com/en-us/research/project/lean/)
+2. Adding new pieces on the board, such as a cat piece, which will have a 2% chance of spawning, and upon spawning, it will swat all the enemy pieces, located on the edge, off the board. 
+3. using godot to make the game 
+4. cpp for the engine 
+
 
 # Roll Number,Name
 1012411172,Ananya Bhonsle
