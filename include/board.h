@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include <vector>
 
 constexpr int BOARD_SIZE = 4;
 constexpr int TOTAL_SQUARES = 256;
@@ -9,9 +8,7 @@ enum Piece {
     EMPTY = 0,
 
     W_PAWN, W_KNIGHT, W_BISHOP, W_ROOK, W_QUEEN, W_KING,
-    B_PAWN, B_KNIGHT, B_BISHOP, B_ROOK, B_QUEEN, B_KING,
-
-    CAT
+    B_PAWN, B_KNIGHT, B_BISHOP, B_ROOK, B_QUEEN, B_KING
 };
 
 struct Move {
@@ -38,8 +35,16 @@ public:
 
     // indexing
     static int index(int x,int y,int z,int t);
+    static void decode(int index, int &x, int &y, int &z, int &t);
+
     static bool inBounds(int x,int y,int z,int t);
-    static bool isEdge(int x,int y,int z,int t);
+
+    // piece helpers
+    static bool isWhite(int piece);
+    static bool isBlack(int piece);
+    static bool isEmpty(int piece);
+
+    static char pieceToChar(int piece);
 
     // access
     int get(int x,int y,int z,int t) const;
