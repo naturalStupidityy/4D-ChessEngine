@@ -1,0 +1,1 @@
+Chess pieces loaded successfully!
